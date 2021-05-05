@@ -88,7 +88,7 @@ port to port 8080 when you run it using the `-p` flag.
 
 ```sh
 # Pass in APP_URL variable
-docker run -e APP_URL=http://localhost:8082/api/items ...other stuff
+docker run -e APP_URL=http://localhost:8081/api/items ...other stuff
 ```
 
 ## You're done when...
