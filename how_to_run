@@ -1,0 +1,11 @@
+# app
+docker run -v `pwd`/data:/usr/src/app/data -p8081:80 liamgriffiths/app
+
+# auth
+docker run -p8082:80 liamgriffiths/auth
+
+# ghi
+docker run \
+  -e APP_URL=http://localhost:8081/api/items \
+  -e AUTH_URL=http://localhost:8082/api/login \
+  -p 8080:80 liamgriffiths/ghi
